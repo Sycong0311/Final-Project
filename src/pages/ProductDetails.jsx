@@ -164,7 +164,6 @@ function ProductDetails() {
               {product.weight && (
                 <li><strong>Weight:</strong> {product.weight}</li>
               )}
-              {/* Add any other specs from the API */}
               {Object.entries(product).map(([key, value]) => {
                 // Skip already displayed fields
                 if (['productId', 'name', 'price', 'imageUrls', 'imageUrl', 'longDescription', 'screenSize', 'batterySpec', 'weight'].includes(key)) {
